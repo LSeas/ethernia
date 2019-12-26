@@ -5,7 +5,7 @@ client.commands = new Discord.Collection();
 
 let prefix = "."
 
-client.login(config.token)
+client.login(process.env.TOKEN)
 
 client.on("ready", () => {
     console.log("Je suis désormais connectée Théo !")
